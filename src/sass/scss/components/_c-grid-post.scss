@@ -14,7 +14,7 @@
         padding-inline: $space-inline-blocks;
     }
     @include mq(tablet-landscape) {
-        grid-template-columns: 622px 1fr;
+        grid-template-columns: 38.875rem 1fr;
         row-gap: 0;
         column-gap: 1rem;
         border-block-end: 0.063rem solid $color-border;
