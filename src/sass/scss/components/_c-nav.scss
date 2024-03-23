@@ -58,7 +58,8 @@
             flex-direction: row;
             justify-content: flex-end;
             align-items: center;
-            padding-inline: 0;
+            padding-inline-start: 0;
+            padding-inline-end: 0.25rem;
         }
         &__item{
             a,
