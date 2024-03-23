@@ -1,0 +1,10 @@
+.c-footer{
+    display: grid;
+    place-items: center;
+    background-color: $color-primary;
+    font-size: 0.750rem;
+    color: $color-secondary;
+    abbr{
+        text-decoration: none;
+    }
+}

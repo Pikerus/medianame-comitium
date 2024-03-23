@@ -1,0 +1,29 @@
+.c-grid-post{
+    max-width: 1000px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    row-gap: 1rem;
+    margin-inline: auto;
+    &__left{
+        border-block-end: 0.063rem solid $color-border;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: $space-inline-blocks;
+        padding-inline: $space-inline-blocks;
+    }
+    @include mq(tablet-landscape) {
+        grid-template-columns: 622px 1fr;
+        row-gap: 0;
+        column-gap: 1rem;
+        border-block-end: 0.063rem solid $color-border;
+        &__left{
+            border-block-end: none;
+        }
+        &__right{
+            height: fit-content;
+            border-inline-start: 0.063rem solid $color-border;
+        }
+    }
+}

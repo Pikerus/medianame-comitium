@@ -1,0 +1,75 @@
+.c-nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    background-color: $color-primary;
+    &__list{
+        height: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: 1rem;
+        gap: 1rem;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: $color-secondary blue; 
+        &::-webkit-scrollbar {
+            width: 0.250rem;
+            background-color: lighten($color-secondary, 50%);
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: $color-secondary; 
+            border-radius: 0.625rem; 
+        }
+        &::-webkit-scrollbar-track{
+            border-radius: 0.625rem;
+            box-shadow: inset 0 0 5px grey;
+            background-color: lighten($color-secondary, 50%);
+        }
+    }
+    &__item{
+        a,
+        button{
+            padding-block: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover,
+            &:active{
+                opacity: $button-event;
+            }
+        }
+    }
+    &[aria-hidden="false"]{
+        transform: translateX(0);
+    }
+    @include mq(tablet-landscape) {
+        position: initial;
+        transform: none;
+        display: block;
+        &__list{
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            padding-inline: 0;
+        }
+        &__item{
+            a,
+            button{
+                font-size: 1rem;
+                font-weight: 500;
+                text-decoration: underline;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+//SETTINGS
+@import 'scss/settings/_settings.scss';
+
+//TOOLS
+@import 'scss/tools/_mixins.scss';
+
+//GENERIC
+@import 'scss/generic/_generic.scss';
+
+//TAGS
+@import 'scss/tags/_tags.scss';
+
+//OBJECTS
+@import 'scss/objects/_o-wrapper.scss';
+
+//COMPONENTS
+@import 'scss/components/_c-footer.scss';
+@import 'scss/components/_c-grid-post.scss';
+@import 'scss/components/_c-header.scss';
+@import 'scss/components/_c-nav.scss';
+@import 'scss/components/_c-post.scss';
+
+//UTILITIES (único archivo donde se permiten !important. Utilizar con moderación)
+@import 'scss/utilities/_utilities.scss';

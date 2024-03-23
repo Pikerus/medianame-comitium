@@ -1,0 +1,10 @@
+.o-wrapper{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 3.125rem 1fr 1.5rem;
+    background-color: $color-secondary;
+    @include mq(tablet-landscape) {
+        grid-template-rows: 4.5rem 1fr 1.5rem;
+        row-gap: 3.125rem;
+    }
+}

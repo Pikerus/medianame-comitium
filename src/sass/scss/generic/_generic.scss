@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p,
+figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $color-bg-screen;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: $color-primary;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+body.has-scroll{
+  overflow-y: hidden;
+}
+
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+svg{
+  max-height: 100%;
+}
+
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+button{
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+button:focus-visible{
+  outline: 3px dashed rgb(0, 0, 0);
+}
+button:disabled {
+    opacity: .5;
+}
