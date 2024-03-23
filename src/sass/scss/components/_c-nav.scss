@@ -6,6 +6,7 @@
     left: 0;
     display: grid;
     place-items: center;
+    visibility: hidden;
     transform: translateX(-100%);
     transition: transform 0.25s ease;
     background-color: $color-primary;
@@ -48,6 +49,7 @@
         }
     }
     &[aria-hidden="false"]{
+        visibility: visible;
         transform: translateX(0);
     }
     @include mq(tablet-landscape) {
