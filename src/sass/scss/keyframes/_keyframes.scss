@@ -1,0 +1,11 @@
+//animación logo al abrir nav menú em mobile
+@keyframes deslizarDesdeArriba {
+    from {
+      transform: translateX(-100%); 
+      opacity: 0; 
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1; 
+    }
+}
