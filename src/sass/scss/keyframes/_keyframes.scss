@@ -1,6 +1,6 @@
 //animación logo al abrir nav menú em mobile
 
-@keyframes deslizarDesdeArriba {
+@keyframes slideFromTop {
     from {
       transform: translateX(-100%); 
       opacity: 0; 
